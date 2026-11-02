@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Daily Edit - a demonstration editorial newspaper website">
+  <title>The Daily Edit | News &amp; Perspective</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">
+    <p>Demonstration news website — article headlines and summaries are for a college project, not breaking news.</p>
+  </div>
+
+  <header class="site-header">
+    <div class="edition-bar">
+      <p id="currentDate">Loading date...</p>
+      <p>Independent Student Edition</p>
+    </div>
+
+    <div class="masthead-wrap">
+      <a class="masthead" href="#home" aria-label="The Daily Edit home">The Daily Edit</a>
+      <p class="tagline">News, Ideas &amp; The Stories That Shape Our World</p>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks">
+        Menu
+      </button>
+      <div class="nav-links" id="navLinks">
+        <button class="nav-button active" type="button" data-category="All">Home</button>
+        <button class="nav-button" type="button" data-category="World">World</button>
+        <button class="nav-button" type="button" data-category="India">India</button>
+        <button class="nav-button" type="button" data-category="Technology">Technology</button>
+        <button class="nav-button" type="button" data-category="Business">Business</button>
+        <button class="nav-button" type="button" data-category="Sports">Sports</button>
+        <button class="nav-button" type="button" data-category="Entertainment">Entertainment</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="featured-section" aria-labelledby="featuredHeading">
+      <div class="section-label">
+        <span>Today's Lead</span>
+      </div>
+      <article class="featured-story" id="featuredStory">
+        <!-- JavaScript adds the featured story here. -->
+      </article>
+    </section>
+
+    <section class="headlines-section" aria-labelledby="headlinesHeading">
+      <div class="section-heading-row">
+        <div>
+          <p class="eyebrow">Briefing</p>
+          <h2 id="headlinesHeading">Latest Headlines</h2>
+        </div>
+        <div class="search-box">
+          <label for="searchInput">Search headlines</label>
+          <input id="searchInput" type="search" placeholder="Type a keyword...">
+        </div>
+      </div>
+      <p id="filterMessage" class="filter-message" aria-live="polite"></p>
+      <div class="headline-grid" id="headlineGrid">
+        <!-- JavaScript adds headline cards here. -->
+      </div>
+    </section>
+
+    <section class="more-section" aria-labelledby="moreHeading">
+      <h2 id="moreHeading">More Headlines</h2>
+      <div class="more-list" id="moreList">
+        <!-- JavaScript adds compact news items here. -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <p class="footer-masthead">THE DAILY EDIT</p>
+      <p>An educational newspaper website built with HTML, CSS and JavaScript.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#headlinesHeading">World</a>
+      <a href="#headlinesHeading">Technology</a>
+      <a href="#headlinesHeading">Sports</a>
+    </nav>
+    <p class="copyright">&copy; 2026 The Daily Edit. Demo content only.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
